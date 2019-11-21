@@ -19,7 +19,7 @@ def run_averages(file_input='brain_sample.csv', file_output='brain_average.csv')
     averages = planes.mean(axis=1)[np.newaxis, :]
 
     # write it out on my file
-    np.savetxt(file_output, averages, fmt='%.f', delimiter=',')
+    np.savetxt(file_output, averages, fmt='%.1f', delimiter=',')
 
 
 if __name__ == "__main__":
